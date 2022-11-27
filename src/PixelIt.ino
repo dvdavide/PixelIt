@@ -1760,6 +1760,7 @@ String GetMatrixInfo()
     root["freeHeap"] = ESP.getFreeHeap();
     root["currentMatrixBrightness"] = currentMatrixBrightness;
     root["wifiBSSID"] = WiFi.BSSIDstr();
+    root["uptime"] = millis()/1000;
 
 #if defined(ESP8266)
     root["sketchSize"] = ESP.getSketchSize();
