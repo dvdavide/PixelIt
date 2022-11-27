@@ -982,6 +982,10 @@ void callback(char *topic, byte *payload, unsigned int length)
         {
             SetConfig(json);
         }
+		else if (channel.equals("restart"))
+        {
+            ESP.restart();
+        }
     }
 }
 
